@@ -98,7 +98,7 @@ export const Search = function Search(props){
           <Text>Search</Text>
         </TouchableHighlight>
       </View>
-      {renderResults()}
+        {renderResults()}
       </View>
       </KeyboardAwareScrollView>
     </View>

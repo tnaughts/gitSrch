@@ -10,7 +10,7 @@
  import { createAppContainer } from 'react-navigation';
  import { createStackNavigator } from 'react-navigation-stack';
  import {Search} from './components/Search'
- import {Repo} from './components/Repo'
+ import Repo from './components/Repo'
  
 
  const AppNavigator = createStackNavigator({

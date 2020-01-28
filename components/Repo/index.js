@@ -5,7 +5,7 @@ import axios          from 'axios'
 import idx from 'idx'
 import * as Animatable  from 'react-native-animatable'
 
-const Repos = function Repos(props){
+const Repo = function Repo(props){
   const {navigation} = props
   const repo = idx(navigation, _ => _.state.params.repo)
   
@@ -25,10 +25,10 @@ const Repos = function Repos(props){
   </ScrollView>
 }
 
-Repos.navigationOptions = ({ navigation }) => ({
-  title: navigation.getParam('name', 'Default')
+Repo.navigationOptions = ({ navigation }) => ({
+  title: navigation.getParam('name', 'Repo')
 });
 
-export const Repo = Repos
+export default Repo
 
 

@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableHighlight } from 'react-native';
-import style from './style'
-
-
 import idx from 'idx'
 
+import style from './style'
 
 export const ResultListCell = function ResultListCell(props){
 const {result, navigation} = props
@@ -14,7 +12,6 @@ function kFormatter(num) {
 }
 
 function onPress(){
-
    idx(navigation, _ => _.push('Repo', {repo: result, name: result.name}))
 }
 
